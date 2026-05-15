@@ -13,32 +13,26 @@
             --toy-primary: #ff6b6b;
             --toy-secondary: #4ecdc4;
             --toy-accent: #ffd93d;
-            --navbar-light: #7ED6F5;
         }
         body {
             font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
             background: linear-gradient(to bottom, #f8f9fa, #e0f7fa);
         }
         .navbar {
-            background: var(--navbar-light) !important;
+            background: linear-gradient(135deg, var(--toy-primary), var(--toy-secondary)) !important;
         }
-        /* White text with shadow effect matching hero */
-        .navbar-brand,
         .nav-link {
             color: white !important;
             font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45),
-                        0 0 10px rgba(0, 0, 0, 0.3) !important;
         }
         .nav-link:hover {
-            color: #fff !important;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.55) !important;
+            color: var(--toy-accent) !important;
         }
         .hero {
             background: url('images/ABC_toys_store.png') center/cover no-repeat;
             color: white;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-            min-height: 400px;
+            min-height: 400px;           /* Ensures good height for the image */
         }
         .toy-card {
             transition: transform 0.3s;
@@ -76,7 +70,7 @@
 <body>
 
     <!-- Fixed Top Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index3.html">
                 <i class="fas fa-cube me-2"></i>ABC Toys
