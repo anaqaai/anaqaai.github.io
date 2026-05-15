@@ -13,50 +13,32 @@
             --toy-primary: #ff6b6b;
             --toy-secondary: #4ecdc4;
             --toy-accent: #ffd93d;
+            --navbar-light: #7ED6F5;
         }
         body {
             font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
             background: linear-gradient(to bottom, #f8f9fa, #e0f7fa);
         }
         .navbar {
-            background: linear-gradient(135deg, var(--toy-primary), var(--toy-secondary)) !important;
+            background: var(--navbar-light) !important;
         }
+        /* White text with shadow effect matching hero */
+        .navbar-brand,
         .nav-link {
             color: white !important;
             font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45),
+                        0 0 10px rgba(0, 0, 0, 0.3) !important;
         }
         .nav-link:hover {
-            color: var(--toy-accent) !important;
+            color: #fff !important;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.55) !important;
         }
         .hero {
             background: url('images/ABC_toys_store.png') center/cover no-repeat;
             color: white;
-            min-height: 420px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        /* Dark overlay for better text readability */
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.45); /* Slight dark overlay */
-            border-radius: 15px;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            padding: 2rem;
-        }
-        .hero h1, .hero h3, .hero .lead {
-            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8),
-                        0 0 15px rgba(0, 0, 0, 0.6);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+            min-height: 400px;
         }
         .toy-card {
             transition: transform 0.3s;
@@ -94,7 +76,7 @@
 <body>
 
     <!-- Fixed Top Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index3.html">
                 <i class="fas fa-cube me-2"></i>ABC Toys
@@ -115,12 +97,10 @@
     </nav>
 
     <div class="container mt-5 pt-5">
-        <div class="hero rounded-4 mb-5">
-            <div class="hero-content">
-                <h1 class="display-3 fw-bold">ABC Toys</h1>
-                <h3 class="display-6">Making Learning Fun!</h3>
-                <p class="lead">Since 2001 • Safe • Educational • Fun</p>
-            </div>
+        <div class="hero text-center py-5 rounded-4 mb-5">
+            <h1 class="display-3 fw-bold">ABC Toys</h1>
+            <h3 class="display-6">Making Learning Fun!</h3>
+            <p class="lead">Since 2001 • Safe • Educational • Fun</p>
         </div>
 
         <div class="row">
@@ -136,7 +116,7 @@
             </div>
         </div>
 
-        <!-- Quick Links -->
+        <!-- Quick Links (Bottom Nav Style) -->
         <div class="row g-4 mt-3 quick-links">
             <div class="col-md-4">
                 <a href="products3.html" class="text-decoration-none">
