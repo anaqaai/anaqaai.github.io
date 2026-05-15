@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PWA Assignment</title>
+
+    <link rel="stylesheet" href="style4.css">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest4.json">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Progressive Web Applications (PWA)</h1>
+
+        <p>
+            A Progressive Web Application (PWA) is a type of web application
+            that combines the best features of websites and mobile applications.
+            PWAs are built using standard web technologies such as HTML, CSS,
+            and JavaScript but can behave like native applications.
+        </p>
+
+        <p>
+            PWAs can work offline using Service Workers, can be installed on
+            desktop or mobile devices, and provide responsive layouts for
+            different screen sizes. They also load quickly and improve the
+            user experience by caching important resources.
+        </p>
+
+        <div class="controls">
+
+            <label for="backgroundSelect">
+                Select Background:
+            </label>
+
+            <select id="backgroundSelect">
+                <option value="">Choose a background</option>
+                <option value="blue">Light Blue</option>
+                <option value="gold">Light Gold</option>
+            </select>
+
+        </div>
+
+        <div class="storage-section">
+
+            <label for="username">
+                Enter your name:
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Type your name"
+            >
+
+            <p id="welcomeMessage">
+                Welcome!
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="app4.js"></script>
+
+</body>
+</html>
