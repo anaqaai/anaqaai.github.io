@@ -18,11 +18,20 @@
             background: linear-gradient(to bottom, #f8f9fa, #e0f7fa);
         }
         .navbar {
-            background: linear-gradient(135deg, var(--toy-primary), var(--toy-secondary)) !important;
+            background: var(--navbar-light) !important;
+        }
+        /* White text with shadow effect matching hero */
+        .navbar-brand {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .navbar-brand:hover {
+            color: var(--toy-accent) !important;
         }
         .nav-link {
             color: white !important;
             font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45),
+                        0 0 10px rgba(0, 0, 0, 0.3) !important;
         }
         .nav-link:hover {
             color: var(--toy-accent) !important;
