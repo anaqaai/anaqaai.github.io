@@ -35,9 +35,30 @@
         }
         .toy-card {
             transition: transform 0.3s;
+            height: 100%;
         }
         .toy-card:hover {
             transform: scale(1.05);
+        }
+        .quick-links .card-img-top {
+            height: 220px;
+            object-fit: contain;
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .quick-links .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .quick-links .card-body .card-title {
+            margin-bottom: 0.5rem;
+        }
+        .quick-links .card-body .card-text {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
         }
         footer {
             background: #343a40;
@@ -87,14 +108,14 @@
             </div>
         </div>
 
-        <!-- Quick Links -->
-        <div class="row g-4 mt-3">
+        <!-- Quick Links (Bottom Nav Style) -->
+        <div class="row g-4 mt-3 quick-links">
             <div class="col-md-4">
                 <a href="products3.html" class="text-decoration-none">
                     <div class="card h-100 toy-card border-0 shadow text-center">
-                        <img src="images/Toys_collection.png" class="card-img-top" alt="Toys">
+                        <img src="images/Toys_collection.png" class="card-img-top" alt="Our Toys">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">Our Toys</h5>
+                            <h5 class="card-title text-primary fw-bold">Our Toys</h5>
                             <p class="card-text">Discover our amazing collection</p>
                         </div>
                     </div>
@@ -105,7 +126,7 @@
                     <div class="card h-100 toy-card border-0 shadow text-center">
                         <img src="images/Location_icon.png" class="card-img-top" alt="Find Us">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">Find Us</h5>
+                            <h5 class="card-title text-primary fw-bold">Find Us</h5>
                             <p class="card-text">See where you are</p>
                         </div>
                     </div>
@@ -114,9 +135,9 @@
             <div class="col-md-4">
                 <a href="contact3.html" class="text-decoration-none">
                     <div class="card h-100 toy-card border-0 shadow text-center">
-                        <img src="images/Contact_book.png" class="card-img-top" alt="Contact">
+                        <img src="images/Contact_book.png" class="card-img-top" alt="Contact Us">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">Contact Us</h5>
+                            <h5 class="card-title text-primary fw-bold">Contact Us</h5>
                             <p class="card-text">We'd love to hear from you!</p>
                         </div>
                     </div>
