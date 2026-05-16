@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 // Background changer
 
 const backgroundSelect = document.getElementById("backgroundSelect");
