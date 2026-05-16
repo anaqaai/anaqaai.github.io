@@ -1,11 +1,11 @@
 if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
+    window.addEventListener("load", function () {
         navigator.serviceWorker
             .register("./swshort.js")
-            .then(() => {
+            .then(function () {
                 console.log("Service Worker Registered");
             })
-            .catch((error) => {
+            .catch(function (error) {
                 console.log("Service Worker Failed:", error);
             });
     });
