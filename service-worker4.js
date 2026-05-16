@@ -11,8 +11,8 @@ const FILES_TO_CACHE = [
     "/images/lightblue.jpg",
     "/images/lightgold.jpg",
 
-    "/images/icon-192.png",
-    "/images/icon-512.png"
+    "/images/Install-icon-192.png",
+    "/images/Install-icon-512.png"
 ];
 
 
